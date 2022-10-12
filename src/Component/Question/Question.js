@@ -3,13 +3,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import { EyeIcon } from '@heroicons/react/24/solid'
 import 'react-toastify/dist/ReactToastify.css';
 
-
 const Question = ({ que, index}) => {
     const { question, options, correctAnswer } = que;
-    
-    
-
-
 
     const handleAnswer = correctAnswer => {
         toast.info(correctAnswer)

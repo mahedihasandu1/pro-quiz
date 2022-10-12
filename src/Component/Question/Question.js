@@ -6,9 +6,9 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Question = ({ que ,questions}) => {
     const { question, options, correctAnswer } = que;
-  let index=0;
+  let index='';
 for (let i=1;i<=questions.length;i++){
-    index=questions[i];
+    index+=i;
 };
 
     const handleAnswer = correctAnswer => {

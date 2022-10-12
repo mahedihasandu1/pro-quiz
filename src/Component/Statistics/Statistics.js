@@ -58,7 +58,7 @@ const Statistics = () => {
     return (
         <div className='lg:w-[40%]  mx-auto mt-7 custom'>
             <div className='justify-items-center '>
-                <BarChart  width={500} height={400} data={data}>
+                <BarChart  width={370} height={400} data={data}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="name" />
                     <YAxis />

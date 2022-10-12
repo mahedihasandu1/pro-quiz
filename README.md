@@ -3,9 +3,9 @@ code link: https://github.com/programming-hero-web-course2/b6-quiz-crackerz-mahe
 
 #this Is pro Quiz World Website ;
 .there is a Chart Which is build in total Quit of quiz question;
-.there is a blog Section ,ther is 3 question & answer;
+.there is a blog Section ,blogsite  has 3 question & answer;
 .there is a cover section , in this cover section has a picture and Some Detail of This SIte;
-
+.
 
 
 

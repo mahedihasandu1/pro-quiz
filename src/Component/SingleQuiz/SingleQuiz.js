@@ -12,7 +12,7 @@ const SingleQuiz = () => {
             <div>
                 
                 {
-                    questions.map(que => <Question questions={questions}  key={que.id} que={que}></Question>)
+                    questions.map((que,index) => <Question index={index} key={que.id} que={que}></Question>)
                 }
             </div>
         </div>

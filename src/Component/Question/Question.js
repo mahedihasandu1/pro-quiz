@@ -1,15 +1,15 @@
 import React from 'react';
 import { ToastContainer, toast } from 'react-toastify';
-import { EyeIcon} from '@heroicons/react/24/solid'
+import { EyeIcon } from '@heroicons/react/24/solid'
 import 'react-toastify/dist/ReactToastify.css';
 
 
-const Question = ({ que ,questions}) => {
+const Question = ({ que, index}) => {
     const { question, options, correctAnswer } = que;
-  let index='';
-for (let i=1;i<=questions.length;i++){
-    index+=i;
-};
+    
+    
+
+
 
     const handleAnswer = correctAnswer => {
         toast.info(correctAnswer)
@@ -23,12 +23,12 @@ for (let i=1;i<=questions.length;i++){
             toast.error('Wrong Answer')
         }
     }
-
+   
     return (
         <div className='text-medium '>
             <div className='flex justify-between mx-10'>
-                <h1 className='text-xl font-semibold'>QuizNo:{index}  {question}</h1>
-                <button onClick={() => handleAnswer(correctAnswer)}> <EyeIcon class="h-6 w-6 mb-2 text-error"/></button>
+                <h1 className='text-xl font-semibold'>  QuizNo:{index +1}  {question}</h1>
+                <button onClick={() => handleAnswer(correctAnswer)}> <EyeIcon class="h-6 w-6 mb-2 text-error" /></button>
             </div>
             <div className='mx-10 grid sm:grid-cols-1 md:grid-cols-2 gap-5'>
                 {

@@ -5,7 +5,6 @@ code link: https://github.com/programming-hero-web-course2/b6-quiz-crackerz-mahe
 .there is a Chart Which is build in total Quit of quiz question;
 .there is a blog Section ,blogsite  has 3 question & answer;
 .there is a cover section , in this cover section has a picture and Some Detail of This SIte;
-.
 
 
 

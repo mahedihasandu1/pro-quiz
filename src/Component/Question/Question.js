@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Question = ({ que, index}) => {
     const { question, options, correctAnswer } = que;
-
+    const q=question.slice(3,-4)
     const handleAnswer = correctAnswer => {
         toast.info(correctAnswer)
     }
@@ -22,7 +22,7 @@ const Question = ({ que, index}) => {
     return (
         <div className='text-medium '>
             <div className='flex justify-between mx-10'>
-                <h1 className='text-xl font-semibold'>  QuizNo:{index +1}  {question}</h1>
+                <h1 className='text-xl font-semibold'>  QuizNo:{index +1}  {q}</h1>
                 <button onClick={() => handleAnswer(correctAnswer)}> <EyeIcon class="h-6 w-6 mb-2 text-error" /></button>
             </div>
             <div className='mx-10 grid sm:grid-cols-1 md:grid-cols-2 gap-5'>
